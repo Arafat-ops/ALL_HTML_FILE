@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARAFAT</title>
+</head>
+<body>
+    <h1 align="center" style="color: goldenrod;">Course Registration From</h1>
+    <form >
+        <fieldset style="border-color: rgb(13, 114, 72);">
+            <legend style="color: rgb(68, 121, 131);" align="center"><b>Personal Information</b></legend>
+            <h3 align="left" style="color: rgb(68, 121, 131);" >First Name : <input type="text" name="First" style="border-color: orange;" ></h3><br<br>
+            <h3 align="left" style="color: rgb(68, 121, 131);">Last&nbspName  : <input type="text" name="Last" style="border-color: orange;"></h3><br<br>
+            <h3 align="left" style="color: rgb(68, 121, 131);">Passward &nbsp&nbsp;: <input type="password" name="passwd" style="border-color: orange;"></h3><br<br>
+            <h3 align="left" style="color: rgb(68, 121, 131);">Gender : 
+                <input type="radio" name="male" value="male" > male
+                <input type="radio" name="female" value="male" > female
+                <input type="radio" name="other" value="other" > other
+            </h3>
+            <h3 align="left" style="color: rgb(68, 121, 131);" >Religion
+                <input type="checkbox" name="islam" value="Islam"> ISLAM
+                <input type="checkbox" name="HINDU" value="HINDU"> HINDU
+                <input type="checkbox" name="OTHER" value="OTHER"> OTHER
+            </h3>
+            <h3 align="left" style="color: rgb(68, 121, 131);">Department :
+            <select name="Department" style="color: goldenrod;border-color: rgb(138, 104, 17);">
+                <option >EEE</option>
+                <option >CSE</option>
+                <option >BA</option>
+            </select>
+            </h3>
+            <p align="left"><b style="font-size: 20px;color: rgb(68, 121, 131);">Comment</b></p>
+            <textarea border="10px" align="left" rows="7" cols="20" height=100px style="border-color:rgb(138, 104, 17) ;" ></textarea><br>
+            <input type="submit" value="Submit" style="background-color: rgb(190, 190, 14);">
+            &nbsp;<input type="reset" value="Reset" style="background-color: rgb(0, 128, 85);">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset style="border-color: rgb(18, 185, 115);">
+        <datalist id="names" style="color:rgb(18, 185, 115);">
+            <option value="RIFAT">RIFAT</option>
+            <option value="SAMIR">SAMIR</option>
+        </datalist>
+        <input type="text" list="names" placeholder="User Name" required pattern="[A-Z a-z]"><br><br>
+        <input type="email" placeholder="Email" required pattern="[A-Z a-z 0-9"><br><br>
+        <input type="submit" value="Sign Up">
+        </fieldset>
+    </form>
+</body>
+</html>
