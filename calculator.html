@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARAFAT</title>
 </head>
+
 <body>
     <h1 align="center" style="color: coral;">CALCULATOR</h1>
-    <table   width="260px" cellspacing="10px" cellpadding=10px style="border-style: solid; border-color: darkgreen;background-color: turquoise;" border="5px" align="center">
+    <table width="260px" cellspacing="10px" cellpadding=10px
+        style="border-style: solid; border-color: darkgreen;background-color: turquoise;" border="5px" align="center">
         <tr align="center" style="background-color: goldenrod;">
-            <td colspan="4"><input type="text" name="Number" required pattern="[0-9]" style="width: 95%;height: 30px;"></td>
+            <td colspan="4"><input type="text" name="Number" required pattern="[0-9]" style="width: 95%;height: 30px;">
+            </td>
         </tr>
         <tr align="center" style="background-color: goldenrod;">
             <td><b><input type="button" value="(" style="background-color:rgb(170, 168, 46);"></b></td>
@@ -43,7 +47,56 @@
             <td><b><input type="button" value="+" style="background-color:rgb(170, 168, 46);"></b></td>
 
         </tr>
-        
+    </table>
+    <br><br>
+    <table width="500px" cellspacing="10px" cellpadding=10px
+    style="border-style: solid; border-color: darkgreen;background-color: turquoise;" border="5px" align="center">
+    <caption align="center" style="color: rgb(109, 98, 79);font-size: 30px;">ANOTHER ONE</caption>
+        <tr>
+            <td>
+                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="number" id="a" value="0"> + <input type="number" id="b" value="0">
+                    =<output name="x" for="a b"></output>
+                </form>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td>
+                <form oninput="x.value=parseInt(a.value)-parseInt(b.value)">
+                    <input type="number" id="a" value="0"> - <input type="number" id="b" value="0">
+                    =<output name="x" for="a b"></output>
+                </form>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td>
+                <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+                    <input type="number" id="a" value="0"> * <input type="number" id="b" value="0">
+                    =<output name="x" for="a b"></output>
+                </form>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td>
+                <form oninput="x.value=parseInt(a.value)/parseInt(b.value)">
+                    <input type="number" id="a" value="0"> / <input type="number" id="b" value="0">
+                    = <output name="x" for="a b"></output>
+                </form>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td>
+                <form oninput="x.value=parseInt(a.value)%parseInt(b.value)">
+                    <input type="number" id="a" value="0"> % <input type="number" id="b" value="0">
+                    = <output name="x" for="a b"></output>
+                </form>
+            </td>
+        </tr>
     </table>
 </body>
+
 </html>
